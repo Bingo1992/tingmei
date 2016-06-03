@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+     <title>我要留言</title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script type="text/javascript" src="js/zepto.min.js"></script>
+     <script type="text/javascript" src="js/scripts.js"></script>
+ </head>
+ <body>
+     <div class="sign-info">
+     	<div class="user-2 user">
+     		<img src="images/portrait.jpg">
+     		<span>张三</span>
+     	</div>
+     	
+     	<a class="signIn btn" href="#">我要留言</a>
+     </div>	
+
+     <div class="banner">
+          <div class="leave-Msg">
+               <div class="user-2 user">
+                    <img class="mini-img" src="images/portrait.jpg">
+                    <span>张三</span>
+               </div>
+               <textarea rows="4" placeholder="请输入您的留言内容"></textarea>
+          </div>
+          <ul class="Msg-pic">
+               <li>
+                    <img src="images/btn1.png">
+               </li>
+               <li>
+                    <img src="images/btn2.png">
+               </li>
+               <li>
+                    <img src="images/btn3.png">
+               </li>
+          </ul>
+          <div class="leave-Msg">
+               <textarea rows="2" placeholder="请输入您的评论内容"></textarea>
+          </div>
+
+          <div class="Msg-bottom">
+               <div class="left">
+                    <a href="#">浏览</a>
+               </div>
+               <div class="right">
+                    <a class="btn btn-collect">
+                         <i class="icon icon-heart"></i>
+                         <span>赞</span>
+                    </a>
+                    <a class="btn">
+                         <i class="icon icon-sign"></i>
+                         <span>评论</span>
+                    </a>
+               </div>
+          </div>
+     </div>
+     <script type="text/javascript">
+     $('.btn-collect').click(function(){
+          $(this).find('i').toggleClass('icon-heart-red');
+     })
+     </script>
+  
+ </body>
+ </html>

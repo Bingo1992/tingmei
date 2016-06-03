@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+     <title>我要投票</title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script type="text/javascript" src="js/zepto.min.js"></script>
+     <script type="text/javascript" src="js/scripts.js"></script>
+ </head>
+ <body>
+     <div class="title">
+    	<img src="images/vote_title.png">
+    </div>
+    
+    <div class="banner">
+        <div class="vote-theme">
+            <p>《未来之星》少儿才艺大赛20160409期</p>
+        </div>
+        <ul class="vote-list">
+            <li>
+                <a href="#">
+                    <div class="left">
+                        <p class="nowrap">【１号XX】女儿长大了会帮爸爸撑伞了帮爸爸撑伞了帮爸爸撑伞了</p>
+                        <div class="btn">请给我投票</div>
+                    </div>
+                    <div class="right">
+                        <img src="images/2.jpg">
+                    </div>
+                </a>   
+            </li>
+            <li>
+                <a href="#">
+                    <div class="left">
+                        <p class="nowrap">【１号XX】女儿长大了</p>
+                        <div class="btn">请给我投票</div>
+                    </div>
+                    <div class="right">
+                        <img src="images/3.jpg">
+                    </div>
+                </a>   
+            </li>
+        </ul>
+    </div>
+
+    <!-- 提示 -->
+    <div class="tip-dialog">
+        <div class="tip-content">
+            <p>投票成功</p>
+        </div>
+       
+    </div>
+        
+    <script type="text/javascript">
+    $(function(){
+        $('.vote-list').find('.btn').click(function(){
+            $(this).addClass('dis-btn').html('已投票');
+            $('.tip-dialog').addClass('show');
+            setTimeout(function(){
+                $('.tip-dialog').removeClass('show');
+            },1500);
+        })
+    })
+    </script>
+   
+ </body>
+ </html>

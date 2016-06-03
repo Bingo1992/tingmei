@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+     <title>每日签到</title>
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script type="text/javascript" src="js/zepto.min.js"></script>
+     <script type="text/javascript" src="js/scripts.js"></script>
+ </head>
+ <body>
+    
+    <div class="sign-top">
+         <h2><span>5</span>天</h2>
+         <p>您已连续签到</p>
+    </div>
+    <div class="sign-center">
+         <p>今日获得学币：<span>480</span></p>
+         <p>您的学币：<span>4800</span></p>
+    </div>
+     <a id="sign" class="btn btn-a">
+          <i class="icon icon-sign"></i>
+          <span>签到</span>
+     </a>
+
+     <div class="sign-rule">
+          <h2>签到规则</h2>
+          <div class="rule-content">
+               <p>1、首次签到获得5学币，连续签到比前一天增加3学币，连续第7日、
+      15日、30日，额外奖励20学币、50学币、100学币；</p>
+      <p>2、连续签到天数以自然月为周期，每月初重新计算，如中途间断，
+      签到天数重新计算；</p>
+      <p>3、积分有效期：按自然年计算，每年1月1日至12月31日的积分，
+      在次年3月20日前兑换完毕。</p>
+          </div>
+     </div>
+     <script type="text/javascript">
+     $(function(){
+          $('#sign').click(function(){
+               $(this).addClass('dis-btn')
+               .find('i').addClass('icon-signed').removeClass('icon-sign')
+               .siblings().html('已签到');
+          })
+     })
+     </script>
+ </body>
+ </html>

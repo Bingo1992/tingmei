@@ -1,0 +1,476 @@
+body,html,div,img,p,a,ul,li,textarea,span,i,h2{margin: 0;
+padding: 0;}
+
+body {
+	background-color: #faf6ea;
+	font: 14px/1.5 "Microsoft Yahei";
+	width: 100%;
+}
+img{
+	display: block;
+	margin: 0 auto;
+	width: 100%;	
+}
+a{text-decoration: none;color: #666;}
+li{list-style: none;}
+textarea,input {
+	-webkit-appearance:none;
+	background: 0;
+	border: 0;
+	outline: 0;
+}
+
+.content {
+	color: #333;
+	padding: .5rem 1rem;
+	text-align: justify;
+	line-height: .9rem;
+	font-size: 12px;
+}
+.ren {width: 80%;margin-bottom: .5rem;}
+.btn-link {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack:center;
+	width: 100%;
+	overflow: hidden;
+}
+.btn-link a {
+	display: block;
+	padding: .5rem 1rem;
+	text-decoration: none;
+	color: #82a90d;
+}
+.btn-link img{
+	width: 2.4rem;
+}
+.btn-link p{
+	color: #82a90d;
+	text-align: center;
+	font-size: 12px;
+}
+/*----------每日签到-----*/
+
+.sign-info{
+	background: url(../images/sign_title.png) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 10rem;
+	box-sizing: border-box;
+	padding: 2rem;
+	position: relative;
+	color: #666;
+}
+.user {
+	text-align: center;
+	float: left;
+	padding-left: 1rem;
+}
+.user img {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 3rem;
+	border: 1px solid #bacd73;
+}
+.user-info {
+	float: left;
+	margin-left: 2rem;
+	line-height: 2rem;
+}
+.btn {
+	background-color: #82a90d;
+	color: #fff;
+	padding: 0 .5rem;
+	line-height: 1.4rem;
+	border-radius: .3rem;
+	display: block;
+	text-align: center;
+}
+.signIn {
+	position: absolute;
+	right: .5rem;
+	bottom: .5rem;
+	font-size: 12px;
+}
+.sign-list {
+	padding: 2rem;
+	line-height: 2.4rem;
+	color: #666;
+}
+i.icon {
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat;
+	background-position: -57px 0;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	margin-right: .2rem;
+	
+}
+i.icon-vip {
+	background-position: -109px -26px;
+	width: 22px;
+	height: 22px;
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+i.icon-learn {
+	background-position: 0 -33px;
+	width: 40px;
+	height: 15px;
+	margin-right: 0;
+	margin-left: -.5rem;
+	-webkit-transform: scale(0.65);
+	transform: scale(0.65);
+}
+i.icon-exam {
+	background-position: -57px -26px;
+	width: 20px;
+	height: 24px;
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.btn-a {
+	width: 8rem;
+	text-align: center;
+	margin: 1rem auto;
+	line-height: 2.2rem;
+}
+
+
+/*-----------每日签到-2---*/
+.sign-top {
+	color: #82a90d;
+	background: url(../images/sign2_title.png) no-repeat;
+	height: 7rem;
+}
+
+.sign-center {
+	background: url(../images/sign2_center.png) no-repeat;
+	height: 9rem;
+}
+.sign-top,.sign-center{
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	-webkit-box-orient:vertical;
+	background-size: 100% 100%;
+	width: 100%;
+}
+.sign-top h2 {
+	font-size: 22px;
+	color: #666;
+}
+.sign-top h2 span {
+	color: #82a90d;
+}
+i.icon-sign {
+	width: 16px;
+	height: 19px;
+	background-position: -109px 0;
+}
+i.icon-signed {
+	width: 36px;
+	height: 31px;
+	background-position: 0 0;
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+.dis-btn {
+	background-color: #ccc;
+	pointer-events:none;
+}
+
+.sign-rule {
+	border-top: 1px dashed #8b8478;
+	padding:  1rem;
+	line-height: 1.2rem;
+	font-size: 12px;
+	text-align: justify;
+	color: #666;
+	margin: 1.5rem .5rem;
+}
+.sign-rule h2 {
+	font-size: 15px;
+	text-align: center;
+
+}
+/*------------调查问卷---------*/
+.question {
+	margin: 1rem auto;
+	background: url(../images/textarea.png) no-repeat;
+	width: 14rem;
+	height: 12.5rem;
+	padding: 1rem;
+	box-sizing:border-box;
+	background-size: 100% 100%;
+}
+.question textarea{width: 100%;height: 100%;}
+.page {
+	display: -webkit-box;
+	-webkit-box-orient:horizontal;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+}
+.page a {
+	display: block;
+	background-color: #fff;
+	border: 1px dashed #88ad18;
+	color: #88ad18;
+	text-align: center;
+	width: 4rem;
+	text-align: center;
+	line-height: 1.4rem;
+	margin: 1rem 1.5rem;
+}
+/*---------每日一测------------*/
+.ask {
+	background: url(../images/ask.png)no-repeat;
+	width: 15rem;
+	height: 7rem;
+	margin: 0 1rem;
+	background-size: 100% 100%;
+	position: relative;
+}
+.ask p{
+	position: absolute;
+	left: 1rem;
+	right: 2rem;
+	bottom: .8rem;
+	line-height: 1.2rem;
+	height: 2.4rem;
+    display: -webkit-box;
+    -webkit-box-align: center;
+}
+.selectTitle {
+	margin: 1rem 1rem .5rem 2rem;
+	width: 3.5rem;
+}
+
+.select-list li {
+	background: url(../images/sel_bg.png) no-repeat;
+	background-size: 100% 100%;
+	width: 11rem;
+	height: 2.75rem;
+	margin: .5rem auto;
+	padding: 0 .5rem .3rem .5rem;
+	box-sizing:border-box;
+	display: -webkit-box;
+	-webkit-box-align:center;
+}
+
+/*-----测试结果----*/
+.exam-result {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+.title-2{
+	width: 9rem;
+	height: 9rem;
+	margin: 1rem auto;
+	background: url(../images/score.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.title-2 p {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	color: red;
+	font-size: 30px; 
+	font-weight: bold;
+}
+.coin-img {
+	width: 2rem;
+
+}
+.score {
+	padding: .5rem;
+	color: #82a90d;
+	font-size: 20px;
+}
+/*-------我要留言-----------*/
+.user-2{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-align:center;
+}
+img.mini-img {
+	width: 2rem;
+	height: 2rem;
+	margin: 0 .5rem .2rem -1rem;
+}
+
+.banner {padding: 1rem;}
+
+.leave-Msg textarea,.upload-img {
+	width: 100%;
+	border-radius: .3rem;
+	background-color: #f3efe2;
+	border: 1px solid #d8ceb4;
+	margin-bottom: .5rem;
+	padding: .5rem;
+	line-height: 1.2rem;
+	overflow: hidden;
+	box-sizing:border-box;
+}
+.Msg-pic li  {
+	float: left;
+	width:3rem;
+	height: 3rem;
+	margin-bottom: .5rem;
+	border: 1px dashed #d8ceb4;
+	overflow: hidden;
+	margin-right: .5rem;
+}
+.Msg-pic img {
+	width: 3rem;
+	height: 3rem;
+}
+.Msg-bottom {
+	overflow: hidden;
+}
+.left {
+	float: left;
+}
+.right{
+	float: right;
+}
+.right .btn {
+	display: inline-block;
+	width: 3rem;
+	margin-left: .5rem;
+}
+i.icon-heart {
+	width: 17px;
+	height: 17px;
+	background-position: -83px 0;
+}
+i.icon-heart-red {
+	background-position: -83px -26px;
+}
+i.icon-sign{
+	background-position: -109px 0;
+	width: 16px;
+	height: 19px;
+}
+
+/*---------我要留言2----------*/
+.message-top{
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+.upload input[type="file"]{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3rem;
+	height: 3rem;
+}
+.upload {
+	position: relative;
+	width: 3.5rem;
+	height: 3.5rem;
+	float: left;
+	margin: .5rem;
+	text-align: center;
+	line-height: 3rem;
+	border: 1px solid #d8ceb4;
+	font-size: 20px;
+}
+.upload-text {
+	display: -webkit-box;
+	height: 4rem;
+	-webkit-box-pack:center;
+	-webkit-box-orient:vertical;
+	color: #999;
+	float: left;
+}
+
+.upload-img img{
+	width: 3.5rem;
+	height: 3.5rem;
+	float: left;
+	margin: .5rem 0 .5rem .5rem;
+	border: 1px solid #d8ceb4;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+/*-------我要投票-----------*/
+.vote-theme {
+	background-color: #fff;
+	border: 1px dashed #a3936b;
+	padding: .5rem;
+}
+.vote-list {
+	margin: 2rem auto;
+}
+
+.vote-list a {
+	display: block;
+	margin-bottom: .5rem;
+	padding-bottom: .5rem;
+	overflow: hidden;
+	border-bottom: 1px dashed #a3936b;
+}
+
+.vote-list .left {
+	width: 8rem;
+	padding-right: 1rem;
+}
+
+.vote-list .nowrap {
+	height: 2rem;
+	line-height: 1rem;
+	text-overflow: ellipsis;
+	overflow : hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-orient: vertical;
+	font-size: 12px;
+
+}
+.vote-list .btn {
+	width: 5rem;
+	line-height: 1.2rem;
+	margin-top: .2rem;
+}
+
+.vote-list img {
+	width: 4.5rem;
+	height: 3.4rem;
+}
+
+/*提示框*/
+.tip-dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.tip-dialog.show {
+    display: -webkit-box;
+}
+.tip-content{
+    color: #fff;
+    background-color: rgba(0,0,0,.6);
+    padding: .5rem 1rem;
+    line-height: 1rem;
+    border-radius: .3rem;
+    max-width: 9rem;
+    min-width: 5rem;
+    text-align: center;
+}
